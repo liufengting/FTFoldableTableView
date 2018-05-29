@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gpE-q2-OW2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Folding Data Source-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aT0-na-b7m"/>
+                        <viewControllerLayoutGuide type="bottom" id="oPN-1M-s9D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="phI-FC-RoM" customClass="FTFoldableTableView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DemoTableViewCellIdentifier" rowHeight="210" id="tUt-RE-tnk" customClass="DemoTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="210"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tUt-RE-tnk" id="JXr-32-k15">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5f-cO-p8G">
+                                                    <rect key="frame" x="15" y="12" width="28.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKq-lf-Y1v">
+                                                    <rect key="frame" x="15" y="37" width="345" height="161.5"/>
+                                                    <string key="text">1.fold的基本意思是“折叠”,可指对折,也可指交叠,引申可表示“包围,包起,笼罩”。
+2.fold用作及物动词时,接名词或代词作宾语,可用于被动结构; 也可接副词away, up或介词in, around, into 等短语作宾语补足语, fold也可用作不及物动词,这时主动形式常含有被动意义。
+3.fold偶尔可用作系动词接形容词作表语。
+4.fold的过去分词folded常用作形容词,在句中作定语。</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="GKq-lf-Y1v" secondAttribute="bottom" constant="11" id="FsX-ib-lHf"/>
+                                                <constraint firstItem="Z5f-cO-p8G" firstAttribute="top" secondItem="JXr-32-k15" secondAttribute="top" constant="12" id="Gg9-Kr-OEz"/>
+                                                <constraint firstItem="GKq-lf-Y1v" firstAttribute="top" secondItem="Z5f-cO-p8G" secondAttribute="bottom" constant="8" id="HSF-fi-Xd8"/>
+                                                <constraint firstAttribute="trailing" secondItem="GKq-lf-Y1v" secondAttribute="trailing" constant="15" id="fYT-Wd-xjs"/>
+                                                <constraint firstItem="GKq-lf-Y1v" firstAttribute="leading" secondItem="JXr-32-k15" secondAttribute="leading" constant="15" id="ihp-r2-POy"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Z5f-cO-p8G" secondAttribute="trailing" constant="20" symbolic="YES" id="k8p-4h-pQw"/>
+                                                <constraint firstItem="Z5f-cO-p8G" firstAttribute="leading" secondItem="JXr-32-k15" secondAttribute="leading" constant="15" id="kNq-qj-WoK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="GKq-lf-Y1v" id="krG-hS-xcV"/>
+                                            <outlet property="titleLabel" destination="Z5f-cO-p8G" id="dco-uJ-l8I"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="foldingDataSource" destination="BYZ-38-t0r" id="ctj-xj-muM"/>
+                                    <outlet property="foldingDelegate" destination="BYZ-38-t0r" id="YNK-t4-32f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="phI-FC-RoM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="8Ci-0Y-fWC"/>
+                            <constraint firstItem="phI-FC-RoM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ffd-Wd-TTe"/>
+                            <constraint firstItem="phI-FC-RoM" firstAttribute="top" secondItem="aT0-na-b7m" secondAttribute="bottom" id="yMf-rS-eDZ"/>
+                            <constraint firstItem="phI-FC-RoM" firstAttribute="bottom" secondItem="oPN-1M-s9D" secondAttribute="top" id="zIx-Es-b8D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="FoldableDemo" id="Tnk-SX-TOp"/>
+                    <connections>
+                        <outlet property="tableView" destination="phI-FC-RoM" id="LwE-t4-waB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="840.79999999999995" y="117.39130434782609"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DoI-wi-njz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gpE-q2-OW2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mtE-zB-VXL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ylb-Cx-4so"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gRo-Ia-nkH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-191.19999999999999" y="776.76161919040487"/>
+        </scene>
+    </scenes>
+</document>
